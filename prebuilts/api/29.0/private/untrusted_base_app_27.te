@@ -33,8 +33,13 @@ bluetooth_domain(untrusted_base_app_27)
 
 # The ability to call exec() on files in the apps home directories
 # for targetApi 26, 27, and 28.
+<<<<<<< HEAD
 allow untrusted_base_app_27 app_data_file:file execute_no_trans;
 auditallow untrusted_base_app_27 app_data_file:file { execute execute_no_trans };
+=======
+# allow untrusted_base_app_27 app_data_file:file execute_no_trans;
+# auditallow untrusted_base_app_27 app_data_file:file { execute execute_no_trans };
+>>>>>>> split out untrusted base app domains
 
 # The ability to invoke dex2oat. Historically required by ART, now only
 # allowed for targetApi<=28 for compat reasons.
